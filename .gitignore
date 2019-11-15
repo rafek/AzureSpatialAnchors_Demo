@@ -1,0 +1,12 @@
+obj/
+Library/
+Logs/
+Temp/
+.vs/
+App/
+App_android/
+
+*.csproj
+*.sln
+
+WSATestCertificate.*
