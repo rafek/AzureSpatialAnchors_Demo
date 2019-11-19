@@ -220,6 +220,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1964399925}
+  - component: {fileID: 1964399926}
+  - component: {fileID: 1964399927}
   - component: {fileID: 1964399924}
   m_Layer: 0
   m_Name: AzureSpatialAnchors
@@ -260,6 +262,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1964399926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964399923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce78ddb9bd8e9d34f93d5495fafbe25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1964399927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964399923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e82ce077f682f245999e642875130db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchoredObjectPrefab: {fileID: 709168036175025118, guid: b43203990a5542e4b94e025f0458799d,
+    type: 3}
 --- !u!1001 &3350783681235786105
 PrefabInstance:
   m_ObjectHideFlags: 0
