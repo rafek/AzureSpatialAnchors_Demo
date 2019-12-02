@@ -21,7 +21,7 @@ public class AppManager : MonoBehaviour
     {
         try
         {
-            await spatialAnchorManager.CreateSessionAsync();
+            await spatialAnchorManager.StartSessionAsync();
         }
         catch (Exception ex)
         {
