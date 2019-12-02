@@ -49,7 +49,10 @@ public class AppManager : MonoBehaviour
 
     private async Task OnObjectSpawned(GameObject spawnedObject)
     {
+        var spawnedObjectMaterial = spawnedObject.GetComponentInChildren<MeshRenderer>().material;
         var cloudNativeAnchor = spawnedObject.GetComponent<CloudNativeAnchor>();
+
+        spawnedObjectMaterial.color = Color.white;
 
         if (cloudNativeAnchor.CloudAnchor == null)
         {
@@ -69,7 +72,11 @@ public class AppManager : MonoBehaviour
             var createProgress = spatialAnchorManager.SessionStatus.RecommendedForCreateProgress;
 
             Debug.Log($"Create Progress: {createProgress}");
+
+            spawnedObjectMaterial.color = Color.Lerp(Color.white, Color.yellow, createProgress);
         }
+
+        spawnedObjectMaterial.color = Color.yellow;
 
         try
         {
@@ -79,10 +86,13 @@ public class AppManager : MonoBehaviour
             // TODO: save that anchor to sharing service if successful
 
             Debug.Log("Anchor saved: " + cloudSpatialAnchor.Identifier);
+
+            spawnedObjectMaterial.color = Color.blue;
         }
         catch (Exception ex)
         {
             // TODO: handle exception
+            spawnedObjectMaterial.color = Color.red;
         }
     }
 }
