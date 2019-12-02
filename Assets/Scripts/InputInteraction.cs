@@ -91,7 +91,7 @@ public class InputInteraction : MonoBehaviour
 #if UNITY_ANDROID || UNITY_IOS
         var arRaycastHits = new List<ARRaycastHit>();
 
-        if (arRaycastManager.Raycast(touch.position, arRaycastHits) && arRaycastHits.Count > 0)
+        if (arRaycastManager.Raycast(touch.position, arRaycastHits, UnityEngine.XR.ARSubsystems.TrackableType.PlaneEstimated) && arRaycastHits.Count > 0)
         {
             var hit = arRaycastHits[0];
 

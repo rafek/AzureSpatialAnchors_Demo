@@ -76,7 +76,7 @@ public class AppManager : MonoBehaviour
             spawnedObjectMaterial.color = Color.Lerp(Color.white, Color.yellow, createProgress);
         }
 
-        spawnedObjectMaterial.color = Color.yellow;
+        spawnedObjectMaterial.color = Color.blue;
 
         try
         {
@@ -87,7 +87,7 @@ public class AppManager : MonoBehaviour
 
             Debug.Log("Anchor saved: " + cloudSpatialAnchor.Identifier);
 
-            spawnedObjectMaterial.color = Color.blue;
+            spawnedObjectMaterial.color = Color.green;
         }
         catch (Exception ex)
         {
